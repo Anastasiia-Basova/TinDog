@@ -1,29 +1,40 @@
 body {
     font-family: "Montserrat", sans-serif ;
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: white;
+
+h3{
+    font-size: 1.5rem;
 }
 
-.container-fluid{
-    padding: 3% 15% 7%;
+p {
+    color: #8f8f8f;
 }
 
-h1{
+/* Headings */
+
+.big-heading {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     line-height: 1.5;
 }
 
-h2 {
-    font-family: "Montserrat", sans-serif;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
-/*Nav B */
+.container-fluid{
+    padding: 7% 15%;
+}
+
+/*Nav Bar */
+
+
 .navbar{
     padding: 0 0 4.5rem;
 }
@@ -45,6 +56,18 @@ h2 {
 
 }
 
+/* Title Section */
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
 .title-img {
     transform: rotate(25deg);
     width: 23%;
@@ -61,23 +84,14 @@ h2 {
 /* Features section */
 
 #features {
-    padding: 7% 15%;
     background-color: white;
     position: relative;
 }
 
 .feature-box {
-    text-align: center;
     padding: 4.5%;
 }
-h3{
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-}
 
-p {
-    color: #8f8f8f;
-}
 
 .icon {
     color: #ef8172;
@@ -90,7 +104,6 @@ p {
 /* Testimonial Section */
 
 #testimonials {
-    text-align: center;
     background-color:  #ef8172;
     color: white;
 }
@@ -101,14 +114,14 @@ p {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
+
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 .press-logo{
@@ -120,9 +133,43 @@ p {
 
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
+
+/* Call to Action block */
+
+#cta {
+    background-color: #ff4c68;
+    color: white;
+}
+
+     /* Footer */
+
+
+#footer {
+    background-color: white;
+}
+
+.footer-logo {
+    margin: 20px 20px 50px;
 }
